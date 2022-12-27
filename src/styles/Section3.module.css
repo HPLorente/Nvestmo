@@ -1,0 +1,143 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    margin: 80px 80px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;  
+    color: #072D96;
+}
+
+.title__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 55px;
+    margin: 0;
+}
+
+.logo {
+    width: 279px;
+    height: 71px;
+    position: relative;
+    top: 15px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+}
+
+.infos__container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 40px;
+}
+
+.info {
+    padding: 20px;
+    background-color: #DBDCDE;
+    border-radius: 29px;
+}
+
+.info__title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color:#072D96;
+}
+
+.info__subtitle {
+    color: #007AE2;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.numbered__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.numbered__info__container {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+}
+
+.number {
+    padding: 30px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8CBD4C;
+    color: white;
+    grid-column: 1/2;
+}
+
+.number__title {
+    grid-column: 2/3;
+    color: #072D96;
+    font-size: 30px;
+    margin: 0;
+    justify-self: start;
+    align-self: center;
+}
+
+.number__subtitle {
+    margin: 0;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: start;
+    text-align: left;
+    color: #393939;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 1050px) {
+    .title, .subtitle {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        margin: 20px 20px;
+    }
+
+    .numbered__info {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+
+    .subtitle {
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+}
